@@ -1,0 +1,171 @@
+html{
+    font-size: 16px;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    font-size: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'inter',sans-serif;   
+    font-weight: 500;
+}
+
+h1{ font-size: 2.5rem;}
+h2{ font-size: 2rem;}
+h3{ font-size: 1.75rem;}
+h4{ font-size: 1.5rem;}
+h5{ font-size: 1.25rem;}
+h6{ font-size: 1rem;}
+
+#banner{
+    object-fit: cover;
+}
+
+#navbar{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+      text-align: center;
+
+}
+
+#new{
+    height: 50px;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+#about{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#description{
+    width: 50%;
+    padding: 0 20px;
+    font-size: 1.25rem;
+}
+
+#team{
+    width: 50%;
+    padding-right: 20px;
+
+}
+
+#teamimg{
+    border-radius: 20px;
+    width: 100%;
+}
+
+#jobs{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+/* .Apply{
+    float: right; 
+} */
+
+a{
+    text-decoration: none;
+    color:#1D4ED8 ;
+}
+
+a:hover{
+    color: #1E3A8A;
+}
+
+#footer{
+    background-color:#D6D3D1;
+    margin-top: 55px;
+    text-align: center;
+}
+
+#footer-links{
+    list-style: none;
+    padding-top: 20px;
+}
+
+#footer-links li{
+    display: inline;
+    margin: 0 20px;
+}
+
+.footer-copyright{
+    color: #44403C;
+    font-size: 0.875rem;
+    padding-bottom: 5px;
+}
+
+#jobs-table{
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+
+}
+
+.jobs-header-row th{
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: #CFFAFE;
+}
+
+.jobs-data-row td{
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+#jobs-table tr:nth-child(odd){
+    background-color: #ECFEFF;
+}
+
+#application{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#application label{
+    font-size: 1.10rem;
+}
+
+#application input,select,textarea{
+    font-size: 1.25rem;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+#application div{
+    margin: 14px;
+}
+
+#application-div textarea{
+    width: 70%;
+    height: 100px;
+}
+
+#application-div input[type="checkbox"]{
+    font-size: 0.50rem;
+}
+
+#application-div input[type="Submit"]{
+    width: 20%;
+    color: #ECFEFF;
+    background-color: #1D4ED8;
+    cursor: pointer;
+}

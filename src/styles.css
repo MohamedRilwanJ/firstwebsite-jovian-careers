@@ -1,35 +1,330 @@
-html{
-    font-size: 16px;
+/*Base Styles (extra small - mobile)*/
+/*CSS Rules*/
+html {
+    font-size: 14px;
 }
 
 
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'inter',sans-serif;   
+#navbar {
+    padding: 8px;
+    margin: 0;
+}
+
+logo {
+    display: block;
+}
+
+#logo-with-text {
+    display: none;
+}
+
+#banner {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'inter', sans-serif;
     font-weight: 500;
 }
 
-h1{ font-size: 2.5rem;}
-h2{ font-size: 2rem;}
-h3{ font-size: 1.75rem;}
-h4{ font-size: 1.5rem;}
-h5{ font-size: 1.25rem;}
-h6{ font-size: 1rem;}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #1D4ED8;
+}
+
+a:hover {
+    color: #1E3A8A;
+    cursor: pointer;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+#description{
+    font-size: 1.25rem;
+}
+
+#teamimg{
+    border-radius: 10px;
+    width: 100%;
+}
+
+#job-head{
+    margin: 20px 0;
+}
+
+#jobs{
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#jobs-table{
+    display: none;
+}
+
+#jobs-list{
+    display: block;
+}
+.job{
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+}
+.job-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #222222;
+}
+.job-detail{
+    color: #444444;
+    margin-top: 5px;
+}
+
+#submit-app{
+    margin: 40px 0 30px 0;
+}
+#application{
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+
+#application label{
+    font-size: 1.10rem;
+}
+
+#application input,select,textarea{
+    font-size: 1.25rem;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+#application-form input,select,textarea{
+    width: 90%;
+}
+
+#application div{
+    margin: 14px;
+}
+
+#application-div textarea{
+    width: 90%;
+    height: 100px;
+}
+
+#application-div input[type="checkbox"]{
+    font-size: 0.50rem;
+    width: 10%;
+}
+
+#application-div input[type="Submit"]{
+    width: 20%;
+    color: #ECFEFF;
+    background-color: #1D4ED8;
+    cursor: pointer;
+}
+
+#footer{
+    background-color:#e2e8f0;
+    margin-top: 55px;
+    text-align: center;
+}
+
+#footer-links{
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+#footer-links li{
+    display: inline;
+    margin: 0 20px;
+}
+
+.footer-copyright{
+    color: #44403C;
+    font-size: 0.875rem;
+    padding-bottom: 5px;
+}
+
+
+
+/* Small devices (tablets) */
+@media screen and (min-width:576px) {
+    html {
+        font-size: 16px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-with-text {
+        display: block;
+    }
+
+    #banner {
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+    #about{
+        max-width: 650px;
+    }
+    #job-head{
+        margin: 30px 0;
+    }
+    #jobs{
+        max-width: 650px;
+    }
+    #application{
+        max-width: 650px; ;
+    }
+    #application-form input,select,textarea{
+        width: auto;
+    }
+}
+
+
+/* medium devices (laptop) */
+@media screen and (min-width:768px) {
+    #banner {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 30px 0;
+    }
+    #about{
+        flex-direction: row;
+        max-width: 1000px;
+    }
+    #description{
+        width: 50%;
+        padding-right: 8px;
+    }
+    #team{
+        width: 50%;
+    }
+    #jobs{
+        max-width: 1000px;
+    }
+    #job-head{
+        margin: 40px 0;
+    }
+    #jobs-list{
+        display: none;
+    }
+    #jobs-table{
+        display: table;
+        width: 100%;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    
+    }
+    
+    .jobs-header-row th{
+        border: 1px solid gray;
+        padding: 8px;
+        background-color: #CFFAFE;
+    }
+    
+    .jobs-data-row td{
+        border: 1px solid gray;
+        padding: 8px;
+    }
+    
+    #jobs-table tr:nth-child(odd){
+        background-color: #ECFEFF;
+    }
+    #application{
+        max-width: 1000px;
+    }
+    
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) {
+    #banner {
+        object-fit: cover;
+        height: 350px;
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (min-width: 1200px) {
+    #banner {
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* 
 
 #banner{
     object-fit: cover;
 }
 
-#navbar{
-    padding: 0;
-    margin: 0;
-}
+
 
 h1{
       text-align: center;
@@ -42,11 +337,6 @@ h1{
     margin-top: 2px;
 }
 
-#about{
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 #description{
     width: 50%;
@@ -75,40 +365,12 @@ h2{
     margin-bottom: 5px;
 }
 
-/* .Apply{
+.Apply{
     float: right; 
-} */
-
-a{
-    text-decoration: none;
-    color:#1D4ED8 ;
 }
 
-a:hover{
-    color: #1E3A8A;
-}
 
-#footer{
-    background-color:#D6D3D1;
-    margin-top: 55px;
-    text-align: center;
-}
 
-#footer-links{
-    list-style: none;
-    padding-top: 20px;
-}
-
-#footer-links li{
-    display: inline;
-    margin: 0 20px;
-}
-
-.footer-copyright{
-    color: #44403C;
-    font-size: 0.875rem;
-    padding-bottom: 5px;
-}
 
 #jobs-table{
     width: 100%;
@@ -168,4 +430,4 @@ a:hover{
     color: #ECFEFF;
     background-color: #1D4ED8;
     cursor: pointer;
-}
+} */
